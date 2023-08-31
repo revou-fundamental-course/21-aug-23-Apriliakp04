@@ -181,7 +181,7 @@ h5{
 	display: flex;
 	flex-direction: row;
 	padding: 1.4rem 7%;
-	justify-content: space-evenly
+	justify-content: space-between;
 
 }
 /* SECTION ACHIVEMENT END */
@@ -261,6 +261,6 @@ h4{
 }
 
 h5{font-size: 1.2rem;}
-.piala{height: 300px;width: 150px;}
+.piala{height: 200px;width: 100px;}
 /* MEDIA QUARIE */
  

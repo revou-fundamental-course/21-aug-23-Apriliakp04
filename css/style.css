@@ -1,5 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* NAVBAR */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* HEADER SECTION START */
 .navbar{
 	display: flex;
 	justify-content: space-between;
@@ -23,12 +72,20 @@
 	color: blue;
 }
 
+/* HEADER SECTION END */
+
 /* HERO SECTION START */
-.content{
+.hero{
 	padding: 1.4rem 7%;
 	font-size: 1.5rem;
 	font-family: 'Courier New', Courier, monospace;
 	font-style: italic;
+}
+
+.img1{
+	width: 1000px;height: 500px;
+	margin-left: 5rem;
+	
 }
 .Fas{
 	display: flex;
@@ -37,13 +94,21 @@
 	font-size: 1.5rem;
 	font-family: 'Courier New', Courier, monospace;
 	font-style: italic;
+	margin-top: 2rem;
 	
 }
 
+.litas{
+	padding: 1.4rem 7%;
+	font-size: 1.2rem;
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
+
+}
 .litas p{
 	display: inline-block;
     flex-direction: row;
-	margin-top: 5rem;
+	margin-top: 2rem;
 	margin-right: 5rem;
 
 }
@@ -56,6 +121,7 @@
 }
 .pesan{
 	display: flex;
+	flex-direction: column;
 	padding: 1.4rem 7%;
 font-size: 1.5rem;
 font-family: 'Courier New', Courier, monospace;}
@@ -63,10 +129,6 @@ font-family: 'Courier New', Courier, monospace;}
 .form{
 	margin-top: 5rem;
 }
-.hasil{
-	margin-top: 5rem;
-}
-
 	
    
 /* HERO SECTION END */
@@ -84,62 +146,121 @@ h4{
 	padding-top: 3rem;
 	padding-left: 5.5rem;
 	padding-right: 3rem;
-	padding-bottom: 20rem;
+	padding-bottom: 10rem;
 	/* padding: 7%; */
 	
 }
 
-
+.about-img{
+	padding-top: 2rem;
+}
 .vismis{
 	display: flex;
 	flex-wrap: wrap;
+	font-size: 1.5rem;
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
 }
-
-
-
-
-	
-
-
-
-	
-
 /* SECTION ABOUT END */
 
 /* SECTION ACHIVEMENT START */
+
 .piagam{
-	padding-top: 3rem;
+	padding-top: 2rem;
 	padding-left: 5.5rem;
 	padding-right: 3rem;
-	padding-bottom: 30rem;}
+	padding-bottom: 5rem;}
 h5{
 	font-size: 1.5rem;
 	font-family: 'Courier New', Courier, monospace;
 	font-style: italic;
 }
 
+
 .piala{
+	display: flex;
+	flex-direction: row;
+	padding: 1.4rem 7%;
+	justify-content: space-evenly
+
+}
+/* SECTION ACHIVEMENT END */
+
+/* SECTION FOOTER START */
+
+#foot {
+	text-align: center;
+	padding: 1rem 0;
+	margin-top: 8rem;
+	border-top: 1px solid black;
+}
+
+
+
+
+/* SECTION FOOTER END */
+
+/* MEDIA QUARIE */
+@media screen and ( max-width: 600px) {
+	.hmtl{
+		font-size: 5%;
+	}
+	
+.img1 {
+	width: 500px;height: 250px;
+	margin-left: auto;
+}
+.navbar{display: flex ;
+	flex-direction: column;
+
+}
+.content{
+	font-size: 1rem;
+}
+.Fas{ font-size: 1.2rem;}
+.litas p{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 0;
+}
+.bg{
+	display: flex;
+	/* justify-content:space-between ; */
+	width: 100;
+}
+h3{ font-size: 1.2rem;
+}
+
+.pesan{display: flex;
+flex-direction: column;}
+.form{
+	font-size: 1rem;}
+
+	.about{
+		padding-left: 1rem;
+	}
+h4{
+	font-size: 1.2rem;
+}
+.about-img img{ width: 200px;height: 200px;}
+
+.about-img{
 	display: flex;
 	justify-content: space-evenly;
 }
-/* SECTION ACHIVEMENT END */
-/* MEDIA QUERIES */
+}
+.vismis{font-size: 1rem;
 
-
-
-@media(max-width: 1366px){
-    html{font-size: 100%;}
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	margin-top: 2rem;
 }
 
-
-@media(max-width: 450px){
-    html{font-size: 55%;
-		
-}}
-
-/* MEDIA QUERIES */
-
-
-	
-
-
+h5{font-size: 1.2rem;}
+.piala{height: 300px;width: 150px;}
+/* MEDIA QUARIE */
+ 

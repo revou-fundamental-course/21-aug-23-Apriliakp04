@@ -27,7 +27,7 @@
             <main class="content">
                 <h1>Hi,<span id="name">April</span>! Welcome to Magic Shop</h1>
                 <p> Ini adalah website latihan pertama</p>
-                <img src="/images/school.jpg" alt="academic" width="1366" height="578">
+                <img class="img1" src="/images/school.jpg" alt="academic" >
               
                 <div Class="Fas">
                 <h2>Our Facilities</h2> 
@@ -51,15 +51,15 @@
         <section class="pesan" id="pesan">
             <h3>Message Us</h3>
 
-            <form action="" class="form">
+            <form class='form' name="message-form" >
 
-                <label for="name-input">Nama :</label>
-                <input required id="name-input" type="text">
+                <label for ="name-input">Nama :</label>
+                <input required id="name-input" name='name-input' type="text">
                 <div>
                 <label for="lahir">Tanggal Lahir:</label>
-                <input type="date" id="lahir" name="lahir">
+                <input required type="date" id="lahir" name="lahir">
             </div>
-                <p id="gender"> Jenis Kelamin:</p>
+                <p required id="gender"> Jenis Kelamin:</p>
                 <input type="radio" id="pria" name="gender" value="Laki-Laki">
                 <label for="pria">Laki-Laki</label><br>
                 <input type="radio" id="wanita" name="gender" value="Perempuan">
@@ -68,7 +68,8 @@
                  <p> Pesan:</p>
                  <textarea name="pesan1" id="pesan1" cols="64" rows="8"></textarea>
 
-                <button onclick="hasil()"id="submit">Submit</button>
+                <button onclick = "submitdata()" id="submit" type="submit">Submit</button>
+                <!-- <p id=" error-name"></p> -->
 
             </form>
 
@@ -88,17 +89,20 @@
 
                 <div class="content">
                 <Span>Visi</Span>
-                <p> Menjadi sekolah unggul yang berkarakter, berkesadaran penuh, 
+                <p> Menjadi sekolah sihir yang berkarakter, berkesadaran penuh, 
                     berbudi pekerti luhur, cerdas, kompeten dan berjiwa kompetisi tinggi
                     sehingga dapat berkontribusi untuk mencerdaskan kehidupan berbangsa 
                     dan bernegara.</p>
 
                 <span>Misi</span>
-                <p> Menyelenggarakan pendidikan unggul yang terpadu, holistik, berkarakter, 
-                    cerdas dan terampil mengelola serta mengimplementasikan teknologi sihir.
-                    Membentuk peserta didik yang berkarakter , berkesadaran penuh, berbudi pekerti, 
-                    dan berjiwa kompetisi tinggi.
-                    Mencetak pemimpin masa depan yang memiliki kemampuan sihir yang andal dan berkepribadian. </p>
+                <p> 1. Menyelenggarakan pendidikan sihir yang terpadu, holistik, berkarakter, 
+                        cerdas dan terampil mengelola serta mengimplementasikan teknologi sihir.
+                        <br>
+                    2. Membentuk pnyihir yang berkarakter , berkesadaran penuh, berbudi 
+                        pekerti, dan berjiwa kompetisi tinggi.
+                        <br>
+                    3. Mencetak pemimpin masa depan yang memiliki kemampuan sihir yang andal dan
+                        berkepribadian. </p>
                  </div>
             <div> 
         </SEction>
@@ -108,12 +112,17 @@
         <SEction class="piagam" id="piagam">
             <h5>Achievement</h5>
          <div class="piala">
-            <img src="images/qz.jpg" width= "300px " height="600px"alt="qz">
-            <img src="/images/wz.jpg"width= "300px " height="600px" alt="wz">
+            <img src="images/qz.jpg" width= "200px " height="500px"alt="qz">
+            <img src="/images/wz.jpg"width= "200px " height="500px" alt="wz">
           </div>  
         </SEction>
 
 <!-- SECTION ACHIEVEMENT END -->
 <script src="js/index.js"></script>
 
+<footer id="foot">
+
+    <p> Creat By Revou</p>
+
+</footer>
 </html>
